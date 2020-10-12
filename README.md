@@ -1,3 +1,4 @@
-# This is a Test README
+# Digital Craft Notes
 
-## Everything in this file is true! It is for command line classs
+## Table of Contents
+1. [Classes](https://github.com/rsamhollyer/Digital-Crafts-Classes)
