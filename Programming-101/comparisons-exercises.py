@@ -18,5 +18,6 @@ name = "Sam"
 
 if name == "Sam":
     print("YES!")
-else:
-    print("NO!")
+
+if name != "Doug":
+    print("NO! These strings are different")
