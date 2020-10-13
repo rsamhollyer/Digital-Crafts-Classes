@@ -19,15 +19,16 @@ if False:
 
 if True:
     print("When is True falsey?") #Never, this will always run
-    
+
 did_something = True
 
 if did_something:
     print("check")
-    
+
 if None:
     print("None is never printed")
-    
+
+
 ##Falsey Statements
 # None
 # False
