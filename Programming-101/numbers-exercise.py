@@ -11,7 +11,7 @@ print(increment_by_number)
 
 
 my_number += increment_by_number
-print("My new number is",my_number)
+print("My new number is", my_number)
 
 my_number += increment_by_number
 print("My new number is",my_number)
