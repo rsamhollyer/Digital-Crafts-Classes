@@ -18,3 +18,10 @@ print("Hello " +name + ",I hope your " +today +" is going well. I'm personally "
 print("Hello %s, I hope that your %s is going well. I'm personally %s" % (name,today,emotion))
 
 print(f"Hello {name}, I hope your {today} is going well. I'm personally {emotion}.")
+
+print(
+"""
+monday, a time for...
+monday is a day to do...
+i don't like mondays
+""")

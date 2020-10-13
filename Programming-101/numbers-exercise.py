@@ -1,6 +1,6 @@
 print(7331 + 7331)
 
-highschool_grad= 2002
+highschool_grad = 2002
 age = 37
 print(age/highschool_grad)
 
