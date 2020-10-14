@@ -16,9 +16,9 @@ pass_word = ""
 counter = 0
 
 while user_name != "sam" and pass_word != "dog":
-    user_name = input("Please enter your username \n")
-    pass_word = input("Please enter your password \n")
+    user_name = input("Please enter your username \n").lower()
+    pass_word = input("Please enter your password \n").lower()
     counter += 1
-    if counter == 3:
+    if counter > 3:
         print("You have failed to enter correct information too many times")
         break
