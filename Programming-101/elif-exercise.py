@@ -9,4 +9,4 @@ if number > random_number:
 elif number == random_number:
     print("THAT'S PERFECT") 
 else:
-    print("MOAR")   
+    print("MOAR")
