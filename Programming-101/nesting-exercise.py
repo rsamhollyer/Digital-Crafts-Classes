@@ -15,7 +15,7 @@ if pet_name == "Daisy":
     print("Good Dog")
 elif pet_name == "Shadow":
     print("El Gato Diablo")  
-elif name_length > 3:
+elif name_length >= 3:
     print(f"Aww, sweet {pet_name}")
 else:
     print(f"While {pet_name} is a cute name, it is much too short. Please enter another name.")
