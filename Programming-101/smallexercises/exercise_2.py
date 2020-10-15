@@ -3,6 +3,6 @@ length = len(name)
 name = name.upper()
 
 print(f"""
-HELLOW {name}!
+HELLO {name}!
 YOUR NAME HAS {length} LETTERS IN IT
 """)
