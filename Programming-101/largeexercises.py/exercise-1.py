@@ -8,5 +8,4 @@ triangle_nums = []
 for i in range(1,101):
     print((i * (i + 1))/2)
     triangle_nums.append(i)
-
 print(triangle_nums)

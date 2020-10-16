@@ -23,6 +23,7 @@ def guess(number1):
     
     if number1 == random_number:
         again = input("Great job! Would you like to play again? Y/N \n")
-        if again == 'y' or play-again == 'yes':
+        if again == 'y' or again == 'yes':
             main()
+
 main()
