@@ -8,3 +8,4 @@
         2. [Medium Exercises](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/Programming-101/mediumexercises)
         3. [Large Exercises](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/Programming-101/largeexercises.py)
         4. [Python_101](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/Programming-101/Python_101)
+2. [Week 1 Algorithm](https://github.com/rsamhollyer/Week-1-Algo-Challenge)
