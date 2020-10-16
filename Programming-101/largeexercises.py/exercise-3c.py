@@ -1,5 +1,7 @@
-# Guess a Number. V2
-random_number = 5
+# Guess the number V3
+import random
+random_number = random.randint(1,10)
+print(random_number)
 print("I am thinking of a number from 1 to 10")
 
 your_guess = int(input("What's the number? \n"))
