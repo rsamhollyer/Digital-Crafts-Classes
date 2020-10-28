@@ -1,0 +1,22 @@
+h1 {
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+}
+main {
+	background-color: yellow;
+	text-align: center;
+}
+
+a:hover {
+	cursor: pointer;
+	color: rgb(83, 170, 90);
+	transform: scale(1.2, 1.2);
+}
+
+.footer {
+	display: flex;
+	gap: 25px;
+	justify-content: center;
+	background-color: grey;
+}
