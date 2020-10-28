@@ -1,0 +1,37 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+.container > div {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.item1 {
+	background: red;
+}
+
+.item2 {
+	background: blue;
+}
+
+.item3 {
+	background: yellow;
+}

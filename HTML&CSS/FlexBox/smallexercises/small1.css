@@ -1,0 +1,18 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.container {
+	width: 500px;
+	height: 500px;
+	background-color: gold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,24 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+.first {
+	padding: 10px;
+	background-color: green;
+	border: solid 1px;
+}
+
+.second {
+	padding: 10px 100px;
+	border: solid red 3px;
+}
+
+.third {
+	padding: 10px 20em 150px 400px;
+	margin: 100px 4px 4px;
+	background-color: grey;
+}

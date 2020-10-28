@@ -1,0 +1,38 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.nav-bar {
+	display: flex;
+	background-color: skyblue;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-bar-menu {
+	display: flex;
+	list-style: none;
+}
+
+.nav-bar-item {
+	color: white;
+}
+
+.nav-bar-menu > li {
+	display: block;
+	flex: 0 1;
+}
+.nav-bar-item > a {
+	text-decoration: none;
+	color: white;
+}
