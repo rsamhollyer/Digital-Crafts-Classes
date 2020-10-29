@@ -3,7 +3,8 @@
 }
 
 .navbar {
-	position: absolute;
+	position: fixed;
+	background: yellow;
 }
 
 .title,

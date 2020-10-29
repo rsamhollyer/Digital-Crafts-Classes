@@ -4,5 +4,11 @@
 
 .header {
 	background: grey;
-	position: sticky;
+	position: fixed;
+	margin: 50px;
+	padding: 50px;
+}
+
+.text {
+	top: 50px;
 }

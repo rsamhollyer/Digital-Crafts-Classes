@@ -1,2 +1,4 @@
 .DS_Store
 Debug-Practices---Clint
+node_modules/bulma
+package-lock.json

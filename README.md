@@ -20,6 +20,8 @@
    3. [HTML/CSS](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/HTML%26CSS)
       1. [Small_exercises](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/HTML%26CSS/SmallExercises)
       2. [Medium_Exercises](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/HTML%26CSS/MediumExercises)
+      3. [Flexbox](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/HTML%26CSS/FlexBox)
+      4. [Position](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/HTML%26CSS/Positions)
 
 2. [Projects](https://github.com/rsamhollyer/projects)
 
