@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+.navbar {
+	position: absolute;
+}
+
+.title,
+.content {
+	position: relative;
+	left: 150px;
+}

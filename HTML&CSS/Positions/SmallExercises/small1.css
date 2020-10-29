@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
+span {
+	position: relative;
+	bottom: 100px;
+	right: 300px;
+	background: white;
+}
