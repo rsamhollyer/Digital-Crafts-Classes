@@ -1,4 +1,4 @@
-//1
+// // 1;
 // let i = 1;
 // let number = 0;
 
@@ -8,12 +8,12 @@
 // 	console.log(number);
 // }
 
-//2
+// // 2;
 // for (let i = 0; i <= 100; i += 2) {
 // 	console.log(i);
 // }
 
-//3
+// // 3;
 // let number = 100;
 // for (let i = 6; i >= 2; i--) {
 // 	number /= i;
@@ -26,11 +26,11 @@ function countDown(iterations) {
 	let i = iterations;
 	let results = 0;
 	do {
-		i % 2 === 0 && i % 3 === 0 ? (results += i) : results;
+		results += i % 2 && i % 3 ? i : 0;
 		i--;
 		if (i === 0) return results;
 	} while (i > 0);
 }
 
-let resultingSums = countDown(2200);
+let resultingSums = countDown(200);
 console.log(resultingSums);
