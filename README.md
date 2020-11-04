@@ -26,6 +26,8 @@
 
    4. [Javascript](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/Javascript)
 
+      1. [Medium_Exercises](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/Javascript/MediumExercises)
+
 2. [Projects](https://github.com/rsamhollyer/projects)
 
    1. [Race_Cars](https://github.com/rsamhollyer/projects/tree/main/Race_Cars)
