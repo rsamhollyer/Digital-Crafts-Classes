@@ -2,11 +2,10 @@ const cipher = function (string, offset) {
 	const alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
 	let stringToDecipher = [...string.toUpperCase()];
 
-	let lookupTable = {};
-
-	alphabet.forEach((item, idx) => {
-		lookupTable[item] = idx;
-	});
+	const lookupTable = alphabet.reduce((accumulator, current, idx) => {
+		accumulator[current] = idx;
+		return accumulator;
+	}, {});
 
 	let decipheredString = stringToDecipher.map((item) => {
 		const characterIndex = lookupTable[item];

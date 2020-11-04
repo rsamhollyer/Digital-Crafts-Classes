@@ -20,7 +20,7 @@ const leetSpeak = function (string) {
 			: null;
 	});
 
-	return array.join(" ").to;
+	return array.join(" ");
 };
 
 let test = leetSpeak("This is kinda cool");
