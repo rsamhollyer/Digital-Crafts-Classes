@@ -1,0 +1,25 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+	width: 100%;
+}
+
+.my-button {
+	background-color: hsl(255, 50%, 50%);
+	font-size: 5rem;
+}
+
+.title {
+	padding: 5px;
+	margin: 4px;
+}
+
+.additional {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
