@@ -2,13 +2,23 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	height: 500px;
 	width: 100%;
 }
 
+/* :root {
+	--buttonFont: 0.5rem;
+} */
+
 .my-button {
 	background-color: hsl(255, 50%, 50%);
 	font-size: 5rem;
+}
+
+.another-button {
+	background-color: hsl(255, 50%, 50%);
+	font-size: 10px;
 }
 
 .title {
