@@ -10,11 +10,6 @@ let playerHandEl = document.querySelector("#player-hand");
 let playerPointsEl = document.querySelector("#player-points");
 let dealerPointsEl = document.querySelector("#dealer-points");
 let messageBoxEl = document.querySelector("#messages");
-let deck = [];
-let playerHand = [];
-let dealerHand = [];
-let playerPoints = 0;
-let dealerPoints = 0;
 
 const addPoints = function () {
 	dealerPointsEl.innerHTML = dealerPoints;
@@ -168,8 +163,6 @@ const determineWinner = function () {
 		messageBoxEl.innerText = "It's a tie....so yay?!";
 	}
 };
-
-// buildDeck();
 
 dealButton.addEventListener("click", handleDealClick);
 hitButton.addEventListener("click", handleHitClick);
