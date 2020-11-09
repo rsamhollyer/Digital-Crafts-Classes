@@ -22,7 +22,8 @@ const addPoints = function () {
 };
 
 const buildCard = function (rank, suit) {
-	return { rank, suit }; //suit, point, imgURL,
+	let imgURL = `./images/${rank}_of_${suit}.png`;
+	return { rank, suit, imgURL }; //suit, point, imgURL,
 };
 
 const buildDeck = function () {
@@ -96,7 +97,7 @@ const handleStandClick = function () {
 const addCardToHand = function (hand, handEl) {
 	const cardToDeal = deck.pop();
 	let cardImageDealer1 = document.createElement("img");
-	cardImageDealer1.src = `./images/${cardToDeal.rank}_of_${cardToDeal.suit}.png`;
+	cardImageDealer1.src = cardToDeal.imgURL;
 	handEl.append(cardImageDealer1);
 	hand.push(cardToDeal);
 };
