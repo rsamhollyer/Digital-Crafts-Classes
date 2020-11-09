@@ -35,6 +35,7 @@
 2. [Projects](https://github.com/rsamhollyer/projects)
 
    1. [Race_Cars](https://github.com/rsamhollyer/projects/tree/main/Race_Cars)
+   2. [Black_Jack](https://github.com/rsamhollyer/Digital-Crafts-Classes/tree/master/blackjack-exercise)
 
 3. [Algorithms_Challenges](https://github.com/rsamhollyer/Week-1-Algo-Challenge)
 
