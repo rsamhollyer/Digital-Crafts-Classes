@@ -1,17 +1,13 @@
-// window.addEventListener("DOMContentLoaded", function () {
-// 	// Execute after page load
-// });
-
 let dealButton = document.querySelector("#deal-button");
 let hitButton = document.querySelector("#hit-button");
 let standButton = document.querySelector("#stand-button");
 let dealerHandEl = document.querySelector("#dealer-hand");
 let playerHandEl = document.querySelector("#player-hand");
-let playerPointsEl = document.querySelector("#player-points");
-let dealerPointsEl = document.querySelector("#dealer-points");
 let messageBoxEl = document.querySelector("#messages");
 
 const addPoints = function () {
+	let playerPointsEl = document.querySelector("#player-points");
+	let dealerPointsEl = document.querySelector("#dealer-points");
 	dealerPointsEl.innerHTML = dealerPoints;
 	playerPointsEl.innerHTML = playerPoints;
 };
