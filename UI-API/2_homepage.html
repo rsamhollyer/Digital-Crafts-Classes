@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Page</title>
+	</head>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 25pc;
+			background: grey;
+		}
+	</style>
+	<body>
+		<script>
+			const createdLogin = function () {
+				let bodySelector = document.querySelector("body");
+				let formCreatedEl = document.createElement("form");
+				let inputCreatedEl1 = document.createElement("input");
+				let inputCreatedEl2 = document.createElement("input");
+				let createdButton = document.createElement("button");
+
+				bodySelector.append(formCreatedEl);
+				formCreatedEl.id = "login";
+				formCreatedEl.method = "get";
+				inputCreatedEl1.name = "username";
+				inputCreatedEl1.placeholder = "username";
+				inputCreatedEl2.name = "passowrd";
+				inputCreatedEl2.placeholder = "password";
+				inputCreatedEl2.type = "password";
+				createdButton.innerText = "Login";
+				formCreatedEl.append(inputCreatedEl1, inputCreatedEl2, createdButton);
+			};
+
+			createdLogin();
+
+			const handleForm = function (e) {
+				let results = [...e.target.elements]
+					.filter((el) => el.name)
+					.map((el) => ({
+						name: el.name,
+						value: el.value,
+						checked: el.checked,
+					}));
+				console.log(results);
+			};
+
+			let loginForm = document.querySelector("#login");
+			let selectorForm = document.querySelector("#favorite-food");
+			let checkBoxForm = document.querySelector(".grouped-checkbox");
+			loginForm.addEventListener("submit", (e) => {
+				// console.log(e.target.elements);
+				e.preventDefault();
+				handleForm(e);
+			});
+		</script>
+	</body>
+</html>
