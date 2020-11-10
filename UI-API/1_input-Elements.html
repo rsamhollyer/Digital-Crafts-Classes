@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Input Elements</title>
+	</head>
+	<style>
+		input:focus {
+			background: yellow;
+			transform: scale(1.5);
+			transform: translate(50px, 0);
+		}
+
+		.grouped-checkbox {
+			display: grid;
+			justify-content: center;
+			gap: 10px;
+			grid-template-columns: repeat(4, 150px);
+			border: 1px solid black;
+		}
+
+		.grouped-radio {
+			display: grid;
+			justify-content: center;
+			gap: 10px;
+			grid-template-columns: repeat(4, 150px);
+			border: 1px solid black;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+	<body>
+		<label for="username">User Name:</label>
+		<input id="username" name="username" placeholder="Username" autofocus />
+
+		<br />
+		<br />
+
+		<label for="password">Password:</label>
+		<input id="password" name="password" placeholder="Pass Word" />
+
+		<br />
+		<br />
+
+		<input id="testbox" type="checkbox" name="agree" value="IAgree" />
+		<label for="testbox">Agree with me</label>
+
+		<br />
+		<br />
+
+		<!-- <div class="grouped-checkbox">
+			<label
+				>Cars
+				<input value="cars" type="checkbox" name="transport" />
+			</label>
+			<label
+				>Trains <input value="trains" type="checkbox" name="transport" />
+			</label>
+			<label
+				>Skateboards
+				<input value="skateboards" type="checkbox" name="transport" />
+			</label>
+			<label
+				>Bikes
+				<input value="bike" type="checkbox" name="transport" />
+			</label>
+		</div> -->
+
+		<!-- <div class="grouped-radio">
+			<label
+				>Cars
+				<input id="cars" value="cars" type="radio" name="transport" checked />
+			</label>
+			<label>
+				Trains
+				<input id="trains" value="trains" type="radio" name="transport" />
+			</label>
+			<label>
+				Skateboards
+				<input
+					id="skateboards"
+					value="skateboards"
+					type="radio"
+					name="transport"
+				/>
+			</label>
+			<label>
+				Bikes
+				<input id="bike" value="bike" type="radio" name="transport" />
+			</label>
+		</div> -->
+		<label for="favorite-food">Fav. Foods</label>
+		<select name="favorite-food" id="favorite-food">
+			<option value="">---Select Fav. Food---</option>
+			<optgroup label="Italian">
+				<option value="pizza">Pizza</option>
+				<option value="pasta">Basghetti</option>
+			</optgroup>
+			<optgroup label="Sweets">
+				<option value="ice-cream">Ice Cream</option>
+			</optgroup>
+		</select>
+		<script>
+			let favFoodEl = document.querySelector("#favorite-food");
+			let optGroupEl = document.createElement("optgroup");
+			let optionEl1 = document.createElement("option");
+			let optionEl2 = document.createElement("option");
+
+			favFoodEl.append(optGroupEl);
+			optGroupEl.label = "Indian";
+			optionEl1.value = "biryani";
+			optionEl1.innerText = "Biryani";
+			optionEl2.value = "chicken-tika";
+			optionEl2.innerText = "Chicken-Tika";
+			optGroupEl.append(optionEl1, optionEl2);
+		</script>
+	</body>
+</html>

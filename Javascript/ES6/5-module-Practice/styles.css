@@ -13,3 +13,9 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	background: grey;
 }
+
+section {
+	margin: 1rem;
+	padding: 5px;
+	background: white;
+}
