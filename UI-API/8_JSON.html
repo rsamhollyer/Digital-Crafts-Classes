@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JSON</title>
+	</head>
+	<style>
+		body {
+			background: grey;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+	<body>
+		<main></main>
+
+		<script>
+			let myJSONObj = JSON.stringify({
+				name: "Sam",
+				age: 37,
+				location: "HTX",
+			});
+
+			console.log(myJSONObj);
+
+			let myJSONArray = [
+				{
+					name: "Murph",
+					age: 2,
+					location: "HTX",
+				},
+				{
+					name: "Remi",
+					age: 3,
+					location: "HTX",
+				},
+				{
+					name: "Edi",
+					age: 12,
+					location: "HTX",
+				},
+				{
+					name: "Poe",
+					age: 10,
+					location: "HTX",
+				},
+			];
+			console.log(myJSONArray);
+
+			//to JSON//
+
+			myJSONArray = JSON.stringify(myJSONArray);
+			console.log(myJSONArray);
+
+			//Back to Obj JS
+
+			myJSONArray = JSON.parse(myJSONArray);
+			console.log(myJSONArray);
+
+			//JSON strings cannot handle functions - only mapable items
+		</script>
+	</body>
+</html>
