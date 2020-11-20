@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LOOPS</title>
+	</head>
+	<body>
+		<script>
+			let myArr = ["a", "b", "c", "d", "e", "f", "g", "h"];
+
+			// for (let i = 0; i < myArr.length; i++) {
+			// 	console.log(myArr[i]);
+			// }
+
+			let outPut = [];
+
+			myArr.forEach((item, idx) => {
+				let myObj = {
+					item,
+					idx,
+				};
+				outPut.push(myObj);
+			});
+
+			console.log(outPut);
+
+			let outPut2 = myArr.map((letter, index) => ({ letter, index }));
+
+			console.log(outPut2);
+		</script>
+	</body>
+</html>

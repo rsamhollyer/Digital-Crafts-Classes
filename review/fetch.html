@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FETCH</title>
+	</head>
+	<body>
+		<script>
+			const corsFix = `http://ec2-13-58-252-7.us-east-2.compute.amazonaws.com:8080/`;
+			fetch(
+				`${corsFix}http://www.metaweather.com/api/location/search/?query=atlanta`,
+				{
+					method: "GET",
+				}
+			)
+				.then((results) => results.json())
+				.then((data) => fetch(`${corsFix}data[0].woeid`))
+				.then((res) => res.json())
+				.then((fData) => console.log(fData));
+
+			//DO WHATEVER
+		</script>
+	</body>
+</html>
