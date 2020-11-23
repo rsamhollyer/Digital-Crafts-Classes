@@ -27,3 +27,6 @@ data.map((value) => {
 	let { name, age } = value;
 	console.log(`This is ${name} and they are ${age} years old`);
 });
+//READFILE when app is not done launching
+
+//READFILSYNCH when trying to get program to launch use this
