@@ -1,12 +1,14 @@
 const http = require("http");
-const port = 5566;
+const fs = require("fs");
+const port = 6531;
 
-const navigation = `<nav>
-<div>
-<span><a href="?page=home"> HOME</a></span>
-<span><a href="?page=contact"> CONTACT</a></span>
-<span><a href="?page=about"> ABOUT</a></span>
-</div>
+const navigation = `
+<nav>
+	<div>
+		<span><a href="?page=home"> HOME</a></span>
+		<span><a href="?page=contact"> CONTACT</a></span>
+		<span><a href="?page=about"> ABOUT</a></span>
+	</div>
 
 </nav>
 `;
@@ -34,26 +36,72 @@ const generateContent = ({ page, navigation, heading, additional, count }) => {
 			<meta charset="UTF-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<title>My Selection ${page}</title>
+			<link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico" />
+			<link rel="stylesheet" href="styles.css" />
 		</head>
 		<body>
-		${navigation}
+			${navigation}
 
-		${heading}
+			${heading}
 
-		The count is ${count || 0}. I hope you are happy
+			The count is ${count || 0}. I hope you are happy
 
-		<ul>
-			${additional.join("")}
-		</ul>
+			<ul>
+				${additional.join("")}
+			</ul>
 
-		<footer>
-		copyright2020</footer>
+			<footer>
+				copyright2020
+				<img src= "clint.jpg" />
+				</footer>
 		</body>
 	</html>
 	`;
 };
 
+const serveFavicon = (req, res) => {
+	fs.readFile("./favicon.ico", (err, data) => {
+		if (err) {
+			res.writeHead(404);
+			res.end();
+		}
+
+		res.write(data);
+		res.end();
+	});
+};
+
+const serveCSS = (req, res) => {
+	fs.readFile("./styles.css", (err, data) => {
+		if (err) {
+			res.writeHead(404);
+			res.end();
+		}
+
+		res.write(data);
+		res.end();
+	});
+};
+
+const serveImage = (req, res) => {
+	fs.readFile("./3.jpg", (err, data) => {
+		if (err) {
+			res.writeHead(404);
+			res.end();
+		}
+
+		res.write(data);
+		res.end();
+	});
+};
+
 const server = http.createServer((req, res) => {
+	console.log(req.url);
+
+	if (req.url === "/favicon.ico") return serveFavicon(req, res);
+	if (req.url === "/styles.css") return serveCSS(req, res);
+	if (req.url === "/clint.jpg") return serveImage(req, res); //Still works with the serveImage function - it does this b/c its just sending data
+
 	res.writeHead(200);
 	//constructing the url object
 
