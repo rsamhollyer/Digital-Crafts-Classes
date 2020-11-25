@@ -1,0 +1,7 @@
+[
+	{ "name": "Car 1", "speed": 100, "year": 1 },
+	{ "name": "Car 2", "speed": 200, "year": 2 },
+	{ "name": "Car 3", "speed": 300, "year": 3 },
+	{ "name": "Car 4", "speed": 500, "year": 4 },
+	{ "name": "Car 5", "speed": 600, "year": 6 }
+]
