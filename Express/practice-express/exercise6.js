@@ -34,7 +34,7 @@ const sendFavicon = (req, res) => {
 
 app.get("/favicon.ico", sendFavicon);
 
-app.get(["/", "/home"], timeLogger, makeUUID, logTheIp, (req, res) => {
+app.get(["/", "/home", "/api"], timeLogger, makeUUID, logTheIp, (req, res) => {
 	console.log(req.requestTime);
 	console.log("*******");
 	console.log(req.yourID);
@@ -47,19 +47,19 @@ app.get(["/", "/home"], timeLogger, makeUUID, logTheIp, (req, res) => {
 					Your home is ${req.yourip}								`;
 	res.send(yourData);
 });
-app.get("/api", timeLogger, makeUUID, logTheIp, (req, res) => {
-	console.log(req.requestTime);
-	console.log("*******");
-	console.log(req.yourID);
-	console.log("******");
-	console.log(req.yourip);
+// app.get("/api", timeLogger, makeUUID, logTheIp, (req, res) => {
+// 	console.log(req.requestTime);
+// 	console.log("*******");
+// 	console.log(req.yourID);
+// 	console.log("******");
+// 	console.log(req.yourip);
 
-	let yourData = `The time is ${req.requestTime} 
-					<br>
-					Your super secret ID is : ${req.yourID}
-					<br>
-					Your home is ${req.yourip}								`;
-	res.send(yourData);
-});
+// 	let yourData = `The time is ${req.requestTime}
+// 					<br>
+// 					Your super secret ID is : ${req.yourID}
+// 					<br>
+// 					Your home is ${req.yourip}								`;
+// 	res.send(yourData);
+// });
 
 server.listen(port, () => console.log(`Listening on port ${port}`));
