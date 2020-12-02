@@ -1,0 +1,27 @@
+{
+    "Alaska": {
+        
+    },
+    "Georgia": {
+        "Athens": {
+
+        },
+        "Atlanta": {
+            "Buckhead": {},
+            "Five Points": {},
+            "East Lake": {
+                "Chris' House": {
+                    "Kitchen": {},
+                    "Living Room": {
+                        "Oakley's Bed": "Oakley"
+                    },
+                    "Bedroom": {}
+                }
+            }
+        },
+        "Macon": {}
+    },
+    "Texas": {
+        "Houston": {}
+    }
+}
