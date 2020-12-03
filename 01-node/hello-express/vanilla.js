@@ -9,6 +9,7 @@ Goal: A website with 3 ugly pages
 1. Homepage
 2. list of cats
 3. individual cats
+    /cats/oakley
 */
 const server = http.createServer((req, res) => {
 	console.log(`They are asking for ${req.url}`);
@@ -31,6 +32,12 @@ const server = http.createServer((req, res) => {
 		res.statusCode = 200;
 		res.setHeader("Content-Type", "text/plain");
 		res.end("MEOW!!");
+	} else if (req.url.startsWith("/cats/")) {
+		//Need to tak everything after '/cats/and store it as a variable
+		const catName = req.url.split("/")[2];
+		res.statusCode = 200;
+		res.setHeader("Content-Type", "text/plain");
+		res.end(`Welcome to the palace of ${catName}`);
 	} else {
 		//404 means we do not have that page
 		res.statusCode = 404;

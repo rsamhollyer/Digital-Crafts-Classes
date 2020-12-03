@@ -5,4 +5,4 @@
     - regular: library that makes the app work at all.
 - [] express() fnc
 - [] app.get()
-- [] npm script()
+- [x] npm script()

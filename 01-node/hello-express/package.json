@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"vanilla": "nodemon vanilla.js",
+		"dev": "nodemon with-express.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
