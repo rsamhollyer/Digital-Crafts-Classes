@@ -15,6 +15,7 @@ express app should handle 3 kinds of routes:
 
 const http = require("http");
 const express = require("express");
+const db = require("./db.js");
 
 const app = express(); //make me a new app
 const server = http.createServer(app);
@@ -52,9 +53,13 @@ app.get("/yes", (req, res) => {
 
 app.get("/yes/:animeChoice", (req, res) => {
 	const { animeChoice } = req.params;
+	const grabAnime = db.filter((anime) => anime.id === animeChoice);
+	const mal = grabAnime[0].mal;
+
 	res.send(`
     <h2>I LOVE ${animeChoice.toUpperCase()} TOO. LET'S BE FRIENDS</h2>
     <br>
+    <h3><a href="${mal}" target = "_blank">GO TO THEIR MAL SITE</a></h3>
     <a href="/yes">BACK</a>
     
     `);
