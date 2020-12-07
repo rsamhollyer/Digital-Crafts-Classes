@@ -5,9 +5,9 @@ const app = (req, res) => {
 	const { first, last, house, wand } = nerds
 		.resolve("Harry Potter")
 		.asArray()[0];
-	res.write(`<h2>${house}</h2>`);
+	res.write(`<h1>${house}</h1>`);
 	res.end(`
-        <h1>${first} ${last}</h1>
+        <h2>${first} ${last}</h2>
         <ul>
             <li>${wand}</li>
         </ul>
