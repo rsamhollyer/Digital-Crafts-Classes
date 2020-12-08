@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const port = 3000;
 const hostname = "localhost";
 
-app.engine("html", es6Renderer); // register to handle html type
+app.engine("html", es6Renderer); // register a new view engine to handle html type
 app.set("views", "templates"); //What directory to look in for files
 app.set("view engine", "html"); //default type
 
