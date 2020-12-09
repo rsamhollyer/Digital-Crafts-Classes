@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+	margin: 50px;
+	padding: 0;
+}
+
+h1 {
+	font-size: 40px;
+	color: purple;
+}
+
+h2 {
+	color: lime;
+}
+li {
+	list-style: none;
+}
+
+p {
+	font-size: 20px;
+}

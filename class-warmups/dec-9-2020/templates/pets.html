@@ -1,0 +1,13 @@
+${head}
+
+<body>
+	<h2>Here are the babies!</h2>
+
+	<ul>
+		${ pets.map(p => { return `
+		<li><a href="/pets/app/${p}" target="_blank">${p}</a></li>
+		`}).join("")}
+	</ul>
+</body>
+
+${foot}
