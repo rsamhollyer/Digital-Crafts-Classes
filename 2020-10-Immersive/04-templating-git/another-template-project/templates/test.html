@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Projects</title>
+		<title>Document</title>
 	</head>
 	<body>
+		<h1>HI!</h1>
 		<ul>
-			${projects.map(p =>`
-			<li><a href="/projects/app/${p}/">${p}</a></li>
-			`).join("")}
+			${myProj.map(p => `
+			<li><a href="/test/app/${p}">${p}</a></li>
+			`).join("") }
 		</ul>
 	</body>
 </html>
