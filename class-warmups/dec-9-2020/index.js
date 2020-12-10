@@ -32,6 +32,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/pets", (req, res) => {
+	//User.map() because there is a 1-1 correspondence b/t petname and pet link
+	const petLinks = pets.map((p) => `<a href="/pets">${p}</a>`);
 	res.render("pets", {
 		locals: {
 			title: "Pets",
@@ -56,6 +58,10 @@ app.get("/pets/app/:name", (req, res) => {
 			foot: "/partials/footers",
 		},
 	});
+});
+
+app.get("*", (req, res) => {
+	res.status(404).send(`<h1> PAGE NOT FOUND</h1>`);
 });
 
 server.listen(port, hostname, () => {
