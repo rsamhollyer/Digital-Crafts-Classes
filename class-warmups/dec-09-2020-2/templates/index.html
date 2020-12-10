@@ -1,0 +1,14 @@
+${head}
+<html>
+	<body>
+		<h1>Welcome to the Book Store</h1>
+		${db.map(o => `
+		<div>
+			<h3><a href="/app/${o.isbn}">${o.title}</a></h3>
+			<h4>${o.author}</h4>
+			<p>${o.price}</p>
+		</div>
+		`).join("")}
+	</body>
+</html>
+${foot}

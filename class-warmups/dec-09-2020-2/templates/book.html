@@ -1,0 +1,15 @@
+${head}
+<html>
+	<body>
+		${db2.map(o => `
+		<h3>${o.title}</h3>
+		<h4>${o.author}</h4>
+		<p>${o.isbn}</p>
+		<p>${o.desc}</p>
+		`)}
+
+		<a href="/">Home</a>
+	</body>
+</html>
+
+${foot}
