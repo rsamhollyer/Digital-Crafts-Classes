@@ -1,0 +1,4 @@
+A genre is a table which has 1 Pkey, Genre ID. It has many artist Fkeys in it's table to link an artist to a particular genre.
+An artist has it's own unique Pkey, Artist ID, as well as many Genre Fkeys and Album Fkeys and Song Fkeys. 
+An Album has a unique Pkey, Album Key, that is linked as an Fkey in a song table as well as an Artist table. An
+A song table has a unique Pkey that is an Fkey in many other tables; album, artist, genre. 
