@@ -2,9 +2,7 @@
 # Agenda
 
 - Little Wins!
-- Kata
+- Katas
+- Intro to Sessions
 - Intro to Relationships
   - "has one" and "belongs to"
-  - "has many"
-  - "many to many"
-
