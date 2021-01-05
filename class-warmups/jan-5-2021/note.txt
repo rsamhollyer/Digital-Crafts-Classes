@@ -1,0 +1,13 @@
+1. My model will be Linked In
+
+    - Linked In has many Users
+    - Each User has many Posts
+    - Each User has many Comments
+    - Each Post has many Comments 
+    - Each Post has many Likes
+
+    - Each User belongs to Linked In
+    - Each Post belongs to one User
+    - Each Comment belongs to one User
+    - Each Comment belongs to one Post
+    - Each Like belongs to one User
